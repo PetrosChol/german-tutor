@@ -1,14 +1,94 @@
+# ===================================================================
+# CORE DEPENDENCIES - LangChain 1.0
+# ===================================================================
+
 # Deep Agents Framework
 deepagents>=0.1.0
 langgraph>=0.2.0
-langchain>=0.3.0
-langchain-anthropic>=0.2.0
+
+# LangChain 1.0 Core
+langchain>=1.0.0
+langchain-core>=1.0.0
+
+# ===================================================================
+# DEFAULT LLM PROVIDERS (Anthropic and OpenAI)
+# ===================================================================
+
+# Anthropic Claude (default provider)
+langchain-anthropic>=0.3.0
+
+# OpenAI GPT models
 langchain-openai>=0.2.0
 
-# Stock Data & Analysis Tools
+# ===================================================================
+# OPTIONAL LLM PROVIDERS
+# Uncomment and install the providers you want to use
+# ===================================================================
+
+# Google Gemini (Vertex AI)
+# langchain-google-vertexai>=2.0.0
+
+# Google Gemini (direct API)
+# langchain-google-genai>=2.0.0
+
+# Cohere
+# langchain-cohere>=0.3.0
+
+# Groq (fast inference)
+# langchain-groq>=0.2.0
+
+# Together AI
+# langchain-together>=0.2.0
+
+# Mistral AI
+# langchain-mistralai>=0.2.0
+
+# Fireworks AI
+# langchain-fireworks>=0.2.0
+
+# Ollama (local models, no API key needed)
+# langchain-ollama>=0.2.0
+
+# AWS Bedrock
+# langchain-aws>=0.2.0
+
+# xAI Grok
+# langchain-xai>=0.1.0
+
+# Community integrations (includes Perplexity and others)
+# langchain-community>=0.3.0
+
+# ===================================================================
+# STOCK DATA & ANALYSIS TOOLS
+# ===================================================================
+
 # Using Yahoo Finance API directly via requests
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
-# Utilities
+# ===================================================================
+# UTILITIES
+# ===================================================================
+
 python-dotenv>=1.0.0
+
+# ===================================================================
+# INSTALLATION INSTRUCTIONS
+# ===================================================================
+#
+# 1. Install base dependencies (includes Anthropic and OpenAI):
+#    pip install -r requirements.txt
+#
+# 2. To use a specific provider, install its package:
+#    pip install langchain-google-genai  # For Google Gemini
+#    pip install langchain-groq          # For Groq
+#    pip install langchain-cohere        # For Cohere
+#    ... etc
+#
+# 3. Or install all providers at once:
+#    pip install langchain-google-vertexai langchain-google-genai \
+#                langchain-cohere langchain-groq langchain-together \
+#                langchain-mistralai langchain-fireworks langchain-ollama \
+#                langchain-aws langchain-xai langchain-community
+#
+# ===================================================================
